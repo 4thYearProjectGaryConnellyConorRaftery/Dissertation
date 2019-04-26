@@ -1,0 +1,136 @@
+
+\documentclass[12pt,a4paper,oneside,openany]{book}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{upquote}
+\usepackage{amsmath}
+\usepackage{titlesec}
+%\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\usetikzlibrary{mindmap,shadows, shapes, arrows, positioning}
+
+%% Change these:
+\newcommand{\projecttitle}{TheEazyTradesMan - A Dynamic Web Application}
+\newcommand{\projectauthor}{Gary Connelly \\[0.2cm] Conor Raftery}
+\newcommand{\projectadvisor}{Dr John Healy , Mr Gerard Harrison}
+\newcommand{\projectprogramme}{B.Sc.(Hons) in Software Development}
+\newcommand{\projectdate}{April, 2019}
+%% End of things to change.
+%% Testing overleaf commit
+%% End of things to dfghjklchange.
+%% Testing commit
+
+
+\tikzstyle{rect} = [rectangle, fill=blue!50, text width=4.5em, text centered, minimum height=4em, rounded corners]
+\tikzstyle{line} = [draw, ->, very thick]
+\tikzstyle{oval} = [ellipse, fill=green!50, text width=5em, text centered]
+
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+
+
+\begin{document}
+  \begin{titlepage}
+    \begin{minipage}[t][6cm]{\textwidth}
+      \centering
+      \rule{\linewidth}{0.5mm} \\[0.4cm]
+      { \LARGE \bfseries \projecttitle \\[0.4cm] }
+      \rule{\linewidth}{0.5mm} \\[0.8cm]
+    \end{minipage}
+    
+    \begin{minipage}[t][6.5cm]{\textwidth}
+      \centering
+      \textbf{\projectauthor}\\[0.5cm]
+      \projectprogramme
+    \end{minipage}
+  
+    \begin{minipage}[t][1cm]{\textwidth}
+      \centering
+      \textsc{\projectdate}
+    \end{minipage}
+      
+    \begin{minipage}[t][3cm]{\textwidth}
+      \centering
+      \textbf{Final Year Applied Project and Dissertation}\\[0.3cm]
+      Advised by: \projectadvisor \\[0.1cm]
+      Department of Computer Science and Applied Physics\\
+      Galway-Mayo Institute of Technology (GMIT)
+    \end{minipage}
+  
+    \begin{center}    
+      \includegraphics{img/gmit-logo.jpg}
+    \end{center}
+  \end{titlepage}
+  \setcounter{page}{2}
+  
+  \chapter*{Acknowledgement}
+  
+  The authors would like to thank the following people:
+  
+  \bigskip
+  
+We would like to thank our families, especially our parents for all the help and support they have provided us with throughout the completion of our B.Sc.(Hons) in Software Development. 
+
+\bigskip
+
+We would like to thank Dr. John Healy and Mr. Gerard Harrison, for all the assistance and guidance they provided for the purpose of completing this dissertation. 
+
+\bigskip
+
+We would also like to thank the entire faculty of G.M.I.T School of Science and Computing, our colleagues and all our friends for being extremely approachable and supportive.
+
+\bigskip
+
+To all our classmates of the B.Sc.(Hons) in Software Development class, 2018/2019.
+
+  
+  \chapter*{Abstract}
+This dissertation is based on the project 'TheEazyTradesman', which was completed as part of the module 'Applied Project and Minor Dissertation'. This project is a dynamic web-application that connects trade workers with customers. It is a three-tier application, using MongoDB and Firebase for the Data Tier, Java JAX-RS for the Logic Tier, and Angular 6 for the Presentation Tier. These technologies have been at the forefront of web applications development in the past decade.
+
+\bigskip
+
+In recent years, there has been an increasing demand for scalable systems in the age of big data. Through this demand, NoSQL Database technologies have emerged. Over the past few decades, SQL has been the dominant database technology, however, the relational nature of SQL technology complicates data scalability beyond practicality.
+
+\bigskip
+
+The objectives of this study was to incorporate the technologies mentioned above with a non-relational database. An investigation took place that researched the feasibility of using established technologies with the Hibernate Persistence Engine to interact with a NoSQL database. An additional objective was to gain an understanding of the complexities behind the development of a full stack dynamic web application. 
+
+\bigskip
+
+To conduct this investigation, an agile approach was taken to develop a system that uses a MongoDB database with the Hibernate OGM(Object Grid Mapping) persistence engine to create a RESTful service using the JAX-RS Java API that can be consumed by an Angular web application.
+
+\bigskip
+Throughout this investigation, it was found that the Hibernate OGM persistence engine functioned well in conjunction with a NoSQL database. Data transactions were easily managed once the developer had a basic understanding of the JPA(Java Persistence API).
+
+\bigskip
+
+Throughout the development process, a thorough understanding was gained of the full stack development life cycle. The various technical skills needed at the specific layers of the stack were obtained or improved as the application evolved. It was realised late into the development of the application that a better implementation of security features may be needed going forward. 
+
+\paragraph{Authors}
+This project was completed by Gary Connelly and Conor Raftery as part of the module "Applied Project and Minor Dissertation" within the Galway-Mayo Institute of Technology. The project source code may be found on the Github Repository;
+
+\noindent\href{https://github.com/4thYearProjectGaryConnellyConorRaftery/TheEazyTradesMan}{https://github.com/4thYearProjectGaryConnellyConorRaftery/}TheEazyTrades Man
+
+
+
+  
+  
+  \tableofcontents
+  %\input{content.tex}
+  \listoffigures
+  \input{dissertation/dissertation/content.tex}
+  %\listoffigures
+  \bibliographystyle{ieeetr}
+  \bibliography{bibliography}
+\end{document}
