@@ -338,7 +338,7 @@ Once this architecture was set up, it was time to connect the RESTful service to
 
 \bigskip
 
-At the sprint retrospective, the team members, along with the project supervisor, had a lengthy meeting about the overall trajectory of the project, where the team wanted to take the project, and how the team was going to get there. At this point, the team also started to look at some other functionality that could be added to the application, such as an implementation of the Google maps API. From this discussion, an updated project backlog was created.
+At the sprint retrospective, the team members, along with the project supervisor, had a lengthy meeting about the overall trajectory of the project, where the team wanted to take the project, and how the team was going to get there. At this point, the team also started to look at some other functionality that could be added to the application, such as an implementation of the Google Maps API. From this discussion, an updated project backlog was created.
 
 
 \subsection{Sprint 6: Job Life Cycle and User Permissions}
@@ -389,8 +389,6 @@ Software testing is an imperative part of any software development methodology\c
 \bigskip
 
 The above graph(fig[\ref{fig:bugCosts}]), is from \href{https://deepsource.io/blog/exponential-cost-of-fixing-bugs/}{\underline{deepsource.io}}.
-
-\bigskip
 
 Testing was a major component in the development of this project. There were both black-box and white-box testing techniques used to ensure the limitation and prevention of bugs in the software. 
 
@@ -509,10 +507,10 @@ The main reason that MongoDB was chosen as the database technology for this proj
 Another reason MongoDB was chosen, is because of the fact that prior to the development of this project, the team members had little experience with MongoDB, and thought that it would be crucial for them to be able to use this technology when they begin to work with industry projects.
 
 \subsubsection{Afterthoughts}
-MongoDB proved to be very easy to get set up with and use. The syntax used to read and write MongoDB is called BSON. BSON is also known as "binary JSON" and is very human readable.
+MongoDB proved to be very easy to get set up with and use. The syntax used to read and write MongoDB is called BSON. BSON is also known as "binary JSON" and is very human readable(Looks very similar to JSON syntax).
 
 \bigskip
-MongoDB worked well with this project, as all it involved was having a different collection for each of the different collections of data in the application. 
+MongoDB worked well with this project, as all it involved was having a different collection for each of the different categories of data in the application. 
 
 Another reason it fit really well with this project, is because of the fact that this project utilised JSON syntax for transferring the data over HTTP. This meant that the data looked almost the same in transition as it did in the database, making manual testing of the web service much easier.
 
@@ -587,13 +585,13 @@ A simplified summary of the specifications are as follows:(The process of creati
 \bigskip
 
 
-The reason this specific API was chosen to create the RESTful service part of the project, was the fact that it is the standard API for creating REST endpoints in the Java programming language. This was an important factor because of the fact that because creating RESTful services was new to the team, it was considered a wise move to learn how to create RESTful services on a technology the team was already familiar with. 
+The reason this specific API was chosen to create the RESTful service part of the project, was the fact that it is the standard API for creating REST endpoints in the Java programming language. This was an important factor because of the fact that creating RESTful services was new to the team. It was considered a wise move to learn how to create RESTful services on a technology the team was already familiar with. 
 This is because the Java programming language was the first language that both team members learned, and therefore were more comfortable using it. 
 
 \subsubsection{Afterthoughts}
-Jax-rs was the ideal technology to use for the RESTful service segment of the project. Because of the fact that the team were already so comfortable with using Java, the learning curve was dramatically cut when learning how to create the RESTful service needed. 
+Jax-rs was the ideal technology to use for the RESTful service segment of the project, because of the fact that the team were already so comfortable with using Java, the learning curve was dramatically cut when learning how to create the RESTful service needed. 
 
-It is also very well documented, any problems that were encountered during the development of the RESTful service were solved remarkably quickly because of the easy to use documentation.
+It is also very well documented; any problems that were encountered during the development of the RESTful service were solved remarkably quickly because of the easy to use documentation.
 
 \bigskip
 
@@ -618,7 +616,7 @@ Previously known as JBoss Application server, it was renamed to WildFly in Novem
 The main reason WildFly was chosen as the application server, was simply the fact that the development team had never used it before. The team members had experience using the Apache Tomcat application server, and wanted to have the experience of using something different.
 
 \subsubsection{Afterthoughts}
-The application server proved to be very easy to use, with just one command "java -jar nameOfJar.jar" to start the server running once the Java has been compiled. Both team members would recommend WildFly to anyone, beginner/intermediate/advanced developers, who needed a quick and easy to use application server.
+The application server proved to be very easy to use, with just one command ("java -jar nameOfJar.jar") to start the server running once the Java has been compiled. Both team members would recommend WildFly to anyone, beginner/intermediate/advanced developers, who needed a quick and easy to use application server.
 
 
 
@@ -631,13 +629,13 @@ The application server proved to be very easy to use, with just one command "jav
     \label{fig:my_label}
 \end{figure}
 %\includegraphics[width=\textwidth, height=150pt]{img/HibernateOGMLogo.png}
-To understand Hibernate OGM, it is easier to first describe Hibernate ORM. Hibernate ORM(Object Relational Mapping) is a tool for mapping data objects in the Java programming language, to a relational database. Hibernate ORM is very commonly used in conjunction with MySQL databases because it offers much more convenient methods of interacting between a database and an application. 
+To understand Hibernate OGM, it is easier to first describe Hibernate ORM. Hibernate ORM(Object Relational Mapping) is a tool for mapping data objects in the Java programming language to a relational database. Hibernate ORM is very commonly used in conjunction with MySQL databases because it offers much more convenient methods of interacting between a database and an application. 
 
-It is this convenience, that has caused Hibernate to be heavily adopted into industry operations and software development projects that involve communicating with a relational database. 
+It is this convenience that has caused Hibernate to be heavily adopted into industry operations and software development projects that involve communicating with a relational database. 
 
 \bigskip
 
-In recent years, there has been a big push towards the use of NoSQL databases. This is because of an increasing demand for databases to be scalable, which is a major issue for relational databases. This poses a problem however. The majority of Java EE developers in the world would be used to using SQL databases and now face the task of learning an entirely new skill set of database interactivity with Java. 
+In recent years, there has been a big push towards the use of NoSQL databases. This is because of an increasing demand for databases to be scalable, which is a major issue for relational databases. This poses a problem however. The majority of Java EE developers in the world would be used to using SQL databases and now face the task of learning an entirely new skillset of database interactivity with Java. 
 
 \bigskip
 
@@ -651,15 +649,15 @@ The main reason Hibernate OGM was used as the persistence engine for this projec
 
 \subsubsection{Afterthoughts}
 
-Hibernate OGM proved to be extremely intuitive to use, once the developer already has experience working with Hibernate ORM. The basic techniques for persisting and querying data are the same regardless of whether the database is a SQL or a NoSQL database.
+Hibernate OGM proved to be extremely intuitive to use, once the developer already has experience working with Hibernate ORM. The basic techniques for persisting and querying data are the same, regardless of whether the database is a SQL or a NoSQL.
 
 \bigskip
 
-The development team however, did run into issues when trying to map objects that contained arrays. MongoDB does support arrays of objects in collections, however when it came time to map these collections to Java objects, errors followed. Because of the fact that OGM is a new concept in relation to ORM, it proved difficult to find solutions to this problem online or in the documentation. This would be one of the drawbacks of using newer technologies. In the end, the team just came up with a work-around(which will be discussed in \hyperref[sec:SystemEvaluationObjectMapping]{\underline{Section 5.6 System Evaulation chapter}} chapter) for the issue as they had to move onto developing other features in the project. 
+The development team, however, did run into issues when trying to map objects that contained arrays. MongoDB does support arrays of objects in collections. When it came time to map these collections to Java objects, errors followed. Because of the fact that OGM is a new concept in relation to ORM, it proved difficult to find solutions to this problem online or in the documentation. This would be one of the drawbacks of using newer technologies. In the end, the team just came up with a work-around(which will be discussed in \hyperref[sec:SystemEvaluationObjectMapping]{\underline{Section 5.6 System Evaulation chapter}} chapter) for the issue as they had to move onto developing other features in the project. 
 
 \bigskip
 
-Hibernate OGM overall however, made life much easier to work with a NoSQL database in conjunction with a Java application and both team members would recommend it to any developers looking to expand on their database skills.
+Overall, Hibernate OGM made life much easier to work with a NoSQL database in conjunction with a Java application and both team members would recommend it to any developers looking to expand on their database skills.
 
 
 \section{Presentation Tier:}
@@ -695,11 +693,11 @@ Angular2 was released in 2016, followed by Angular4 by the end of 2016. Angular5
 
 \bigskip
 
-The reasoning behind choosing Angular for the development of this project was simple; It was possibly the most popular technology in industry that the team did not previously know anything about. Angular also uses tools that both team members were already comfortable with, for example HTML and TypeScript. The development team members previously had a good wealth of experience using JavaScript, which TypeScript is a syntactical super-set of. 
+The reasoning behind choosing Angular for the development of this project was simple; It was possibly the most popular technology in industry that the team did not previously have any experience with. Angular also uses tools that both team members were already comfortable with, for example HTML and TypeScript. The development team previously had a good wealth of experience using JavaScript, which TypeScript is a syntactical super-set of. 
 
-It also became known to the team prior to development that Angular provides tools to help with testing the application such as Jasmine and Protractor. 
+It also became known to the team, prior to development, that Angular provides tools to help with testing the application such as Jasmine and Protractor. 
 
-Angular was also considered attractive to the team because of the fact that it is "mobile and desktop-ready", meaning that one has one framework for multiple platforms. 
+Angular was also considered attractive to the team because of the fact that it is "mobile and desktop-ready", meaning that it has one framework for multiple platforms. 
 
 \bigskip
 
@@ -711,7 +709,7 @@ The simple reason for using Angular version 6 was the fact that at the time of c
 \subsubsection{Afterthoughts}
 Angular was an extremely easy piece of technology to get used to. The decoupling of logic and view elements of the application made it really intuitive to create web applications with. 
 
-If a situation arose where a member of the development team was stuck on an issue, or just didn't know how to implement a certain feature in the product backlog that needed to implemented in Angular, all they had to do was type the specifics of the issue into a browser, and then be greeted with an absolute abundance of possible solutions and answers. 
+If a situation arose where a member of the development team was stuck on an issue, or just didn't know how to implement a certain feature in the product backlog, all they had to do was type the specifics of the issue into a browser, and then be greeted with an absolute abundance of possible solutions and answers. 
 
 Both team members would highly recommend learning Angular to any developer at any stage of their career.
 
@@ -742,7 +740,7 @@ Another reason for choosing Bootstrap as one of the front-end technologies, was 
 
 \subsubsection{Afterthoughts}
 
-Bootstrap was a very easy technology to integrate with an Angular front-end application. The documentation was very explanatory and easy for anyone, regardless of whether they would be considered a beginner, intermediate or advanced in software development, to follow. In a very short space of time, anyone could take a very plain front-end application and make it look very professional and slick with the aid of the Bootstrap framework. Both development team members would recommend Bootsrtap to anyone developing, or learning to develop front end web applications. 
+Bootstrap was a very easy technology to integrate with an Angular front-end application. The documentation was very explanatory and easy for anyone, regardless of whether they would be considered a beginner, intermediate or advanced in software development, to follow. In a very short space of time, anyone could take a very plain front-end application and make it look very professional and slick with the aid of the Bootstrap framework. Both team members would recommend Bootstrap to anyone developing or learning to develop front end web applications. 
 
 
  
@@ -760,13 +758,13 @@ Bootstrap was a very easy technology to integrate with an Angular front-end appl
 \end{figure}
 %\includegraphics[width=\textwidth, height=150pt]{img/JavaLogo.PNG}
 
-Java is a very famous and and well-rounded multi-purpose programming language and computing platform. It was created by Sun Microsystems in 1995. 
+Java is a very famous and well-rounded multi-purpose programming language and computing platform. It was created by Sun Microsystems in 1995. 
 
 Java is an "object-oriented" programming language, meaning that the language and its' methods are built on the concept of "objects" of data. There are just over nine million Java developers in the world today(2019). 
 
 \bigskip
 
-The Java programming language can be used to create a whole host of applications, mobile apps, desktop apps, web client apps and server side applications can all be written using Java. It started with the slogan "Write Once and Run Anywhere" and enables platform independence. Java is present in almost every single area of computer science, from artificial intelligence, to telecommunications, to virtual reality, and shows no signs of slowing down. 
+The Java programming language can be used to create a whole host of applications, mobile apps, desktop apps, web client apps and server side applications. It started with the slogan "Write Once and Run Anywhere" and enables platform independence. Java is present in almost every single area of computer science, from artificial intelligence, to telecommunications, to virtual reality, and shows no signs of slowing down. 
 
 \bigskip
 
@@ -775,7 +773,7 @@ It became clear to both team members at a very early stage of planning and resea
 Java also exposed some nice tools for creating the RESTful service part of the project, Jax-rs, which was covered in an earlier sub-heading. 
 
 \subsubsection{Afterthoughts}
-The development team were already very familiar with Java and were very happy with the way it integrated and communicated with the other components in the application. Java is a must-learn for any new developers because the team members feel that once a new developer learns Java, learning all of the other languages and frameworks becomes much easier as a lot of them are modelled off of the popular programming paradigms present in the Java platform. 
+The development team were already very familiar with Java and were very happy with the way it integrated and communicated with the other components in the application. Java is a must-learn for any new developers because the team members feel that, once a new developer learns Java, learning all of the other languages and frameworks becomes much easier as a lot of them are modelled off of the popular programming paradigms present in the Java platform. 
 
 
 
@@ -792,7 +790,7 @@ The development team were already very familiar with Java and were very happy wi
 
 \bigskip
 
-TypeScript is an open-source programming language developed and maintained by Microsoft. TypeScript was originally created to bridge the gap between JavaScript and the growing demand for JavaScript to grow into a fully-fledged server-side technology. JavaScript's failure to embrace the features of "Object-Orientation", strong type checking and compile-time error checks prevented JavaScript from succeeding at the enterprise level. 
+TypeScript is an open-source programming language developed and maintained by Microsoft. TypeScript was originally created to bridge the gap between JavaScript and the growing demand for JavaScript to grow into a fully-fledged server-side technology. JavaScript's failure to embrace the features of "Object-Orientation", strong type checking and compile-time error checks prevented JavaScript from succeeding at enterprise level. 
 
 TypeScript is a strongly typed, object-oriented, compiled language. TypeScript is the syntactical super-set of JavaScript, meaning all JavaScript syntax can also be considered TypeScript. TypeScript gets compiled to JavaScript. 
 
@@ -817,11 +815,11 @@ The development team were extremely pleased with how well documented and intuiti
 %\includegraphics[width=\textwidth, height=150pt]{img/LaTexLogo.PNG}
 
 
-Latex is a markup syntax that describes a documents structure and presentation. Latex is typically used in the scientific world to make professional. Technically, LaTex can be considered a programming language because of the fact that is "Turing Complete", however it's main job is that of a mark-up language.   
+Latex is a markup syntax that describes a document's structure and presentation. Latex is typically used in the scientific world to make professional documentation. Technically, LaTex can be considered a programming language because of the fact that it is "Turing Complete"\cite{teller1994turing}, however, it's main job is that of a mark-up language.   
 
 \bigskip
 
-LaTex was used to create the dissertation part of this project. The reason the development team decided to use LaTex was the fact that LaTex offers very strong control over the format and structure of a document. 
+LaTex was used to create the dissertation for this project. The reason the development team decided to use LaTex was the fact that LaTex offers very strong control over the format and structure of a document. 
 
 \section{Development Tools:}
 \label{sec:TechnologyReviewDevTools}
@@ -838,13 +836,13 @@ LaTex was used to create the dissertation part of this project. The reason the d
 
 \bigskip
 
-Git is an open-source version control system that was started by the same man who created Linux, Linus Trovalds.
+Git is an open-source version control system that was started by the same man who created Linux; Linus Trovalds.
 
-Git is considered by many to be the most preferred version control system on the market. A Git "Repository" is simply a directory on a machine that is being tracked by git. Any changes made to any of the files in this directory can be "added" and then "committed" to the repository. The users have control over what files get added, committed or even tracked by Git within that repository. 
+Git is considered, by many, to be the most preferred version control system on the market. A Git "Repository" is simply a directory on a machine that is being tracked by Git. Any changes made to any of the files in this directory can be "added" and then "committed" to the repository. The users have control over what files get added, committed or even tracked by Git within that repository. 
 
 \bigskip
 
-GitHub is a web-based hosting service for version control using Git. Users of git can create remote versions of their Git repository and "push" changes made in their local repository to the remote repository on the Github servers.  Github has some really nice features including a nice graphical user interface, in contrast to the Git command-line tool. 
+GitHub is a web-based hosting service for version control using Git. Users of Git can create remote versions of their Git repository and "push" changes made in their local repository to the remote repository on the Github servers.  Github has some really nice features including a nice graphical user interface, in contrast to the Git command-line tool. 
 
 Github also makes project collaboration very easy and informed. Github provides the owners of a Github repository with analytics about that repository, such as contributors, clones, traffic etc. 
 
@@ -854,12 +852,12 @@ Git and Github were the obvious version control solutions for this project becau
 
 \subsubsection{Afterthoughts}
 
-The development team learned a lot more about how Git and Github works during the course of the development of this application because of the fact that this was one of the first times they had to collaborate on a Github repository. The team made extensive use of branches to ensure that the development of one feature doesn't affect the development of another. Branches were also used when experimenting with other features without worrying about damaging the master branch. 
+The development team learned a lot more about how Git and Github works during the course of the development of this application, because of the fact that this was one of the first times they had to collaborate on a Github repository. The team made extensive use of branches to ensure that the development of one feature doesn't affect the development of another. Branches were also used when experimenting with other features without worrying about damaging the master branch. 
 
-The development team however did at times find it difficult to resolve merge conflicts and needed the help of Visual Studio code plugins to solve these difficulties.
+The development team, however, did at times find it difficult to resolve merge conflicts and needed the help of Visual Studio Code plugins to solve these difficulties.
 
 \bigskip
-Overall, both team members were extremely happy with their use of Git and Github as well-rounded, well-informed versioning control systems. 
+Overall, both team members were extremely happy with their use of Git and Github as a well-rounded, well-informed versioning control systems. 
 
 
 
@@ -874,18 +872,18 @@ Overall, both team members were extremely happy with their use of Git and Github
 \end{figure}
 %\includegraphics[width=\textwidth, height=150pt]{img/PostManLogo.PNG}
 
-Postman is a RESTful API testing tool that can be used to inspect APIs made by other people or to test APIs developed yourself. Postman offers a nice user interface that users can utilise to make API requests without needing to write the code to test the API's functionality. 
+Postman is a RESTful API testing tool that can be used to inspect API's made by other people, or to test API's developed by oneself. Postman offers a nice user interface that users can utilise to make API requests without needing to write the code to test the API's functionality. 
 
-Users can test GET, PUT, POST, DELETE and other HTTP requests against an API and view the response in their preferred format. Users can also specify headers on HTTP requests and inspect the intricate details of the returned Response object and payload.
+Users can test GET, PUT, POST, DELETE, and other HTTP requests against an API and view the response in their preferred format. Users can also specify headers on HTTP requests and inspect the intricate details of the returned Response object and payload.
 
 \bigskip
 
-Postman was chosen to test the RESTful service part of this project because, while the team members had not used it prior to development, they had seen it being used by others and liked how it looked.
+Postman was chosen to test the RESTful service part of this project, because, while the team members had not used it prior to development, they had seen it being used by others and liked how it looked.
 
 \subsubsection{Afterthoughts}
-Postman was the perfect tool for testing the RESTful service segment of this project. As the development team was constructing the service, they could test each and every REST endpoint using this tool, and inspect the Response objects. It also allowed for experimentation to investigate how the client-side application might use headers to heighten security or other features. 
+Postman was the perfect tool for testing the RESTful service segment of this project. As the development team was constructing the service, they could test each and every REST endpoint using this tool, and inspect the HTTP Response objects. It also allowed for experimentation to investigate how the client-side application might use headers to heighten security or other features. 
 
-Both team members would absolutely use Postman again whenever they are working with RESTful services in the future.
+Both team members would, absolutely, use Postman again whenever they are working with RESTful services in the future.
 
 
 \subsection{Maven:}
@@ -901,14 +899,14 @@ Both team members would absolutely use Postman again whenever they are working w
 
 Maven is a popular build tool used for building Java projects and handling project dependencies. Unlike other tools like Apache Ant, Maven uses conventions and standards for the build procedure, and only requires exceptions to these conventions to be documented in XML files. 
 
-The Maven tool will automatically handle the download of external Java libraries and plug-ins from the Maven repositories and store them in the local device cache. Maven can also be used to build projects written in C\# or Ruby, but it is primarily used with Java. 
+The Maven tool will automatically handle the download of external Java libraries and plug-ins from the Maven repositories, and store them in the local device cache. Maven can also be used to build projects written in C\# or Ruby, but it is primarily used with Java. 
 
 \bigskip
 
-The reason Maven was required in this project development, was the fact that Hibernate OGM, and Jax-rs require quite a lot of dependencies, and because of the fact that the team members did not have much prior experience with these technologies, they felt it would be wise to allow the Maven tool handle these dependencies during the build process.
+The reason Maven was required in this project development, was the fact that Hibernate OGM and Jax-rs require quite a lot of dependencies, and because of the fact that the team members did not have much prior experience with these technologies. Because of this, they felt it would be wise to allow the Maven tool to handle these dependencies during the build process.
 
 \subsubsection{Afterthoughts}
-The development team were very satisfied with how Maven fit in to this project. In this instance, Maven was used to build and handle the dependencies for the Java RESTful service. This was one of the first times the team members used Maven. They were very pleased to see that one only needed to know a couple of commands in order to integrate Maven into this project and allow it to mask the complexities of dependency management.
+The development team were very satisfied with how Maven fit into this project. In this instance, Maven was used to build and handle the dependencies for the Java RESTful service. This was the first time the team members have used Maven. They were very pleased to see that one only needed to know a couple of commands in order to integrate Maven into this project, and allow it to mask the complexities of dependency management.
 
 \subsection{Angular CLI:}
 \label{sec:TechnologyReviewCLI}
@@ -925,14 +923,14 @@ The development team were very satisfied with how Maven fit in to this project. 
 
 Angular CLI is a command line tool for creating and updating angular apps. CLI stands for command-line-interface. 
 
-When manually creating Angular applications, there is a lot of boiler plate code needed to configure the app. Angular CLI solves this problem by creating all of this boiler plate code for the developer. Fore example; if the developer wanted to make an empty component, they would need only type "ng g c myComponent" into the CLI, and the CLI would create a component called myComponent with a ready-to-go HTML file, TypeScript file and CSS/SCSS file. This eliminates the possibility of making silly errors during the creation of component files. CLI also generates the necessary testing files using Jasmine, Karma and Protractor.
+When manually creating Angular applications, there is a lot of "boiler plate code" needed to configure the app. Angular CLI solves this problem by creating all of this "boiler plate code" for the developer. For example; if the developer wanted to make an empty component, they would need only type "ng g c myComponent" into the CLI, and the CLI would create a component called myComponent with a ready-to-go HTML file, TypeScript file and CSS/SCSS file. This eliminates the possibility of making silly errors during the creation of component files. CLI also generates the necessary testing files using Jasmine, Karma and Protractor.
 
 \bigskip
 
-The main reason Angular-CLI was chosen as a build tool for this project was the fact that both team members did not have much experience manually creating Angular components from scratch and didn't want to waste time fixing unforced errors made while configuring the Application. 
+The main reason Angular-CLI was chosen as a build tool for this project was the fact that both team members did not have much experience manually creating Angular components from scratch, and didn't want to waste time fixing unforced errors made while configuring the Application. 
 
 \subsubsection{Afterthoughts}
-Angular-CLI was an extremely useful tool during the development of this project. The time saved by using CLI to create and modify the Angular application, was put to more productive use in actually developing features in the project rather than fixing bugs caused by a typo in one of the configuration files. Also, the testing files that CLI automatically brought into the project gave the team a good head-start when the time came to write automated tests for the application. 
+Angular-CLI was an extremely useful tool during the development of this project. The time saved by using CLI to create and modify the Angular application, was put to more productive use in actually developing features in the project, rather than fixing bugs caused by a typo in one of the configuration files. Also, the testing files that CLI automatically brought into the project gave the team a good head-start when the time came to write automated tests for the application. 
 
 \bigskip
 
@@ -969,7 +967,7 @@ The default browser used by Karma is Chrome. When the Karma task runner is start
 
 \bigskip
 
-The main reason for using Jasmine and Karma to do the unit tests on the Angular application, was because of the fact that they were automatically supplied with the app through Angular-CLI. The team investigated online before deciding to use these technologies, to make sure that if any issues were encountered, that there would be enough resources available to solve those issues. 
+The main reason for using Jasmine and Karma to do the unit tests on the Angular application, was because of the fact that they were automatically supplied with the app through Angular-CLI. The team investigated online before deciding to use these technologies, to make sure that if any issues were encountered, that there would be enough resources available to resolve those issues. 
 
 \bigskip
 
@@ -989,9 +987,9 @@ Jasmine and Karma were very well documented and easy to use. Not much automated 
 
 \bigskip
 
-NPM stands for Node Packet Manager. NPM is a software registry that contains over 800,000 code packages. NPM is open-source, free to use, and developers download all NPM public software packages without any registration or login.
+NPM stands for Node Packet Manager. NPM is a software registry that contains over 800,000 code packages. NPM is open-source and free to use, where developers download all NPM public software packages without any registration or login.
 
-NPM is the default packet manager for the JavaScript run-time environment Node.js. NPM is very commonly used to handle any dependencies involved in creating Angular applications. 
+NPM is the default packet manager for the JavaScript run-time environment 'Node.js'. NPM is very commonly used to handle any dependencies involved in creating Angular applications. 
 
 \bigskip
 
@@ -999,7 +997,7 @@ The reason NPM was used as a packet manager in this project, was because NPM wor
 
 \subsubsection{Afterthoughts}
 
-NPM was the ideal packet manager for the client-side of the project. Any dependencies that Angular required, regardless of the APIs that were being used, were automatically handled by NPM in the background. If at any stage the application was missing dependencies, for example when one team member adds dependencies to their local version of the project and pushes that to Github, could simply be resolved by typing "npm install" into the command line.
+NPM was the ideal packet manager for the client-side of the project. Any dependencies that Angular required, regardless of the APIs that were being used, were automatically handled by NPM in the background. If, at any stage, the application was missing dependencies, for example when one team member adds dependencies to their local version of the project and pushes that to Github, could simply be resolved by typing "npm install" into the command line.
 \bigskip
 
 
@@ -1019,7 +1017,7 @@ NPM was the ideal packet manager for the client-side of the project. Any depende
 
 \bigskip
 
-Eclipse IDE is the most widely used IDE for Java. An IDE(Integrated, Development, Environment) is a piece of software that provides  comprehensive facilities to computer programmers for software development. Eclipse is mainly used to for Java development, but it can also support other programming languages via plug-ins such as C, C\#, C++, Python, Ruby etc. 
+Eclipse IDE is the most widely used IDE for Java. An IDE(Integrated Development Environment) is a piece of software that provides  comprehensive facilities to computer programmers for software development. Eclipse is mainly used to for Java development, but it can also support other programming languages via plug-ins such as C, C\#, C++, Python, Ruby etc. 
 
 \bigskip
 
@@ -1042,11 +1040,11 @@ The team members were both very content with the Eclipse IDE because it made the
 
 \bigskip
 
-Visual Studio Code(VSC) is a popular IDE developed by Microsoft. Visual Studio Code provides support for debugging, embedded Git control, syntax highlighting, intelligent code completion and more.
+Visual Studio Code(VSC) is a popular IDE developed by Microsoft. Visual Studio Code provides support for debugging, embedded Git control, syntax highlighting, intelligent code completion, and more.
 
 \bigskip
 
-VSC was selected as the source code editor for the Angular front-end faction of the project. The reason for this, was the fact that up to the point of developing this project, the team members didn't have much exposure to VSC and were curious to try it because of the fact that it seemed to be so popular. 
+VSC was selected as the source code editor for the Angular front-end faction of the project. The reason for this, was the fact that up to the point of developing this project, the team members didn't have much exposure to VSC and were curious to try it because it seemed to be so popular amongst the software community. 
 
 \subsubsection{Afterthoughts}
 
@@ -1064,7 +1062,7 @@ Both team members would highly recommend Visual Studio Code to any developers lo
 \end{figure}
 %\includegraphics[width=\textwidth, height=120pt]{img/overleafLogo.png}
 
-Overleaf provides a web-based freemium academic writing environment. Overleaf allows users to create a range of documents from blog posts, journal articles, etc. Overleaf provides a lot of rich features that make it very convenient to write and create documents in LaTex syntax without much prior knowledge of LaTex.
+Overleaf provides a web-based freemium academic writing environment. Overleaf allows users to create a range of documents such as blog posts, journal articles, etc. Overleaf provides a lot of rich features that make it very convenient to write and create documents in LaTex syntax without much prior knowledge of LaTex.
 
 \bigskip
 
@@ -1084,11 +1082,11 @@ To host the dynamic website application, the team used an AWS EC2 Virtual Machin
 
 \bigskip
 
-The AWS Platform was chosen for its scalability, flexibility, and reliability. The team wanted to show that the project can be completely distributed, with the front-end services and back-end services being executed independently of each other. AWS provided the suitable tool to get this done.
+The AWS Platform was chosen for its scalability, flexibility, and reliability. The team wanted to show that the project can be completely distributed, with the front-end services and back-end services being executed independently of each other. AWS provided the suitable tools to get this done.
 
 
 \subsubsection{Afterthoughts}
-In the beginning, the team ran into issues concerning the port forwarding. There is a substantial amount of configuration required to set up the ports correctly. Such as selecting the correct port, and allowing the correct type of traffic through the firewall (HTTP, TCP). AWS itself, is easy to use, has no capacity limits, provides speed and agility, and is secure and reliable. Overall, the team were content with the AWS Cloud Platform.
+In the beginning, the team ran into issues concerning the port forwarding. There is a substantial amount of configuration required to set up the ports correctly, such as selecting the correct port, and allowing the correct type of traffic through the firewall (HTTP, TCP). AWS itself, is easy to use, has no capacity limits, provides speed and agility, and is secure and reliable. Overall, the team were content with the AWS Cloud Platform.
 
 \chapter{System Design}
 \label{sec:SystemDesign}
@@ -1114,7 +1112,7 @@ In this chapter of the document, the overall design and architecture of the proj
 The Data Tier is a catch-all phrase used to describe any mechanism used to allow for the storage and manipulation of data in the application. More often than not, these mechanisms are databases. 
 
 There were two databases used in the design of this application; MongoDB, and Firebase.
-The motives for using these databases are described in more detail in the \hyperref[sec:TechnologyReview]{\underline{Technology Review}} chapter of the paper.
+The motives for using these databases are described in more detail in the \hyperref[sec:TechnologyReview]{\underline{Technology Review}} chapter of this paper.
 
 
 \subsection{MongoDB}
@@ -1122,7 +1120,7 @@ The motives for using these databases are described in more detail in the \hyper
 
 \bigskip
 
-MongoDB was used to store all of the user data that was not related authentication data. The MongoDB technology was discussed in an earlier chapter, but as a quick summary, MongoDB stores data in groups called collections. Each collection is completely independent (Unlike MySQL where tables can be joined.) 
+MongoDB was used to store all of the user data that was not related to authentication data. The MongoDB technology was discussed in an earlier chapter, but as a quick summary, MongoDB stores data in groups called collections. Each collection is completely independent (Unlike MySQL where tables can be joined.) 
 
 \bigskip
 
@@ -1185,7 +1183,7 @@ An example Worker object might look like fig[\ref{fig:workerExample}].
 
 * The reason that the "rating" field needs to be a string data-type, is the fact that the rating field doesn't store the actual rating for the worker. This field stores a string of two comma separated values. The first value is the amount of ratings this worker has had, and the second value represents the total of all of the ratings for that worker. 
 
-If the worker has been rated three times, and each rating was 50, 75 and 100 respectively, the value of the "rating" field would be "3, 225"(50+75+100). The ratings are handled in this way so that another field is not needed on the database to store the total amount of ratings so that an average can be calculated. On the client side, this string is split by the comma, and the second value is simply divided by the first value, then rounded to the nearest integer for the actual rating to be displayed.
+If the worker has been rated three times, and each rating was 50, 75 and 100 respectively, the value of the "rating" field would be "3, 225"(50+75+100). The ratings are handled in this way, so that another field is not needed on the database to store the total amount of ratings, so that an average can be calculated. On the client side, this string is split by the comma, and the second value is simply divided by the first value, then rounded to the nearest integer for the actual rating to be displayed.
 \bigskip
 
 \subsubsection{Customer Schema}
@@ -1334,7 +1332,7 @@ Now that a connection to the database has been configured, the Java application 
 \subsection{Models}
 \label{sec:SystemDesignModels}
 
-There are three models in the Java application, one for each collection in the database. These models should be designed in such a way that it is easy for the Hibernate engine to map between the Java and BSON(MongoDB representations of an object) objects.
+There are three models in the Java application, one for each collection in the database. These models should be designed in such a way, that it is easy for the Hibernate engine to map between the Java and BSON(MongoDB representations of an object) objects.
 
 \subsubsection{Job}
 \label{sec:SystemDesignJob}
@@ -1640,9 +1638,9 @@ To explain the role of the .TS file in the components of this application, the e
 
 \bigskip
 
-The "updateWorker" parameter that is passed into method, is the worker object that was filled out with the form values. This worker object is then sent to the workerService(the \hyperref[sec:SystemDesignRESTConsumers]{\underline{RESTful consumer}} which was discussed in the last section), and passed to the "putWorker()" method which in turn send a PUT request for that worker to the RESTful service. 
+The "updateWorker" parameter that is passed into the method, is the worker object that was filled out with the form values. This worker object is then sent to the workerService(the \hyperref[sec:SystemDesignRESTConsumers]{\underline{RESTful consumer}} which was discussed in the last section), and passed to the "putWorker()" method which in turn send a PUT request for that worker to the RESTful service. 
 
-A confirmation message is then set before the user is navigated to a confirmation page to confirm that the request was a success. It is the typescript file in a component that communicates with the different services, and the services communicate with the back-end RESTful service which can then communicate with the database.
+A confirmation message is then set before the user is navigated to a confirmation page to confirm that the request was a success. It is the Typescript file in a component that communicates with the different services, and the services communicate with the back-end RESTful service, which can then communicate with the database.
 
 \subsubsection{CSS}
 \label{sec:SystemDesignCSS}
@@ -1690,7 +1688,7 @@ To access the virtual machine for any changes that needed to be implemented, a m
 
 \section{Authentication}
 \label{sec:SystemDesignAuthentication}
-To implement the Firebase Authentication, the team first created a Firebase account. To do this, they visited the page \href{https://firebase.google.com/}{https://firebase.google.com/} and created an account. They then pressed the 'Go to the console' link. On the console there is an option to create a new Firebase project. Once the firebase project has been created, it will redirect to the 'Get Started' page. The team clicked on the 'Add Firebase to your web app' button and a pop up with the app credentials was shown. The pop up will have the following information(fig[\ref{fig:credentials}]) about the new Firebase App:
+To implement the Firebase Authentication, the team first created a Firebase account. To do this, they visited the page '\href{https://firebase.google.com/}{https://firebase.google.com/}' and created an account. They then pressed the 'Go to the console' link. On the console there is an option to create a new Firebase project. Once the firebase project has been created, it will redirect to the 'Get Started' page. The team clicked on the 'Add Firebase to your web app' button and a pop up with the app credentials was shown. The pop up will have the following information(fig[\ref{fig:credentials}]) about the new Firebase App:
 
 \begin{figure}[H]
     \centering
@@ -1700,11 +1698,11 @@ To implement the Firebase Authentication, the team first created a Firebase acco
 \end{figure}
 These credentials were added to the Angular project configuration file '\textit{environment.ts}'.
 
-Next, AngularFire2 needed to be installed, this was done through command prompt by entering the command '\textit{npm install @angular/fire firebase --save} Then the team imported the Firebase libraries into the '\textit{app.module.ts}', so Firebase can be used within the Angular project. These libraries also needed to be declared as imports.
+Next, AngularFire2 needed to be installed. This was done through the command line by entering the command '\textit{npm install @angular/fire firebase --save}'. Then the team imported the Firebase libraries into the '\textit{app.module.ts}', so Firebase can be used within the Angular project. These libraries also needed to be declared as imports.
 
 \bigskip
 
-To select the authentication methods that the team wanted to integrate into the Angular app, they needed to navigate to Firebase project. Then under 'your Firebase console', they went to 'Develop = Authentication' and then clicked the Sign-in method tab. To perform Facebook authentication in the Angular application, the team needed to create a Facebook application in the Facebook developer page. Once the Facebook App has been created, the team got an 'App Id' and 'App Secret Key'.
+To select the authentication methods that the team wanted to integrate into the Angular app, they needed to navigate to 'Firebase project'. Then under 'your Firebase console', they went to 'Develop', then 'Authentication', and then clicked the Sign-in method tab. To perform Facebook authentication in the Angular application, the team needed to create a Facebook application in the Facebook developer page. Once the Facebook App has been created, the team got an 'App Id' and 'App Secret Key'.
 
 To enable to the Facebook sign-in method within the Firebase console, these credentials needed to be entered. Once Facebook is enabled as a login, a valid OAuth redirect URI will be automatically generated, and must be entered in the Facebook Application panel.
 
@@ -1720,19 +1718,19 @@ The login and register functionality has 3 components:
 
 The navigation routes are very simple. However, note that there is an AuthGuard which checks if there is a current logged in user, and in that case it redirects that user to the User page. The same happens when you try to go to the User page but you are not logged in, you get redirected to the login page, because you don’t have access to the user page.
 
-The team created an AuthService which is the class that allows the users to login, register and logout with the different Firebase providers. All the authentication logic is stored in this service, which allowed the team to create components that did not need to implement any authentication logic, and helped to keep the components simple. In other words, the AuthService does most of the heavy lifting and it is the glue between the Angular app and Firebase.
+The team created an AuthService, which is the class that allows the users to login, register and logout with the different Firebase providers. All the authentication logic is stored in this service, which allowed the team to create components that did not need to implement any authentication logic, and helped to keep the components simple. In other words, the AuthService does most of the heavy lifting and it is the glue between the Angular app and Firebase.
 
 \bigskip
 
 The functions to perform the actual login (Facebook login and email/password login) are contained within the AuthService, in '\textit{auth.service.ts}' class. See the code below:
 
 
-In our AuthService we have the functions to perform each social login using Firebase. For example to do Facebook login, or register with email and password, see the following code: 
+In our AuthService we have the functions to perform each social login using Firebase. For example to do Facebook login, or register with email and password, see the following code (fig[4.29] and fig[4.30]): 
 
 
 
 
-\begin{figure}[!tbp]
+\begin{figure}[H]
   \centering
   \begin{minipage}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{dissertation/dissertation/img/facebookLoginCode.PNG}
@@ -1753,21 +1751,21 @@ As discussed in the  \hyperref[sec:TechnologyReview]{\underline{Technology Revie
     \centering
     \includegraphics[width=\textwidth, height=250pt]{img/HomeWorker.PNG}
     \caption{Worker Home}
-    \label{fig:my_label}
+    \label{fig:worker_home}
 \end{figure}
 
-As is evident in the above figure, blue and white are the dominating colours of this page. These colours are just as dominant across the entire web application.
+As is evident in the fig[\ref{fig:worker_home}], blue and white are the dominating colours of this page. These colours are just as dominant across the entire web application.
 
-The development team realised that a lot of the biggest online brands, like Facebook, Twitter, Tumblr, LinkedIn, Microsoft, WordPress and many others, all feature blue as the dominant colour. Blue is also said to be the preferred colour of both men and women. Blue is also said to be associated with professionalism and trustworthiness\cite{Blue}. For these reasons, and the fact that the development team just felt that blue looked quite nice with the web application, blue became the dominant theme throughout. 
+The development team realised that a lot of the biggest online brands, like Facebook, Twitter, Tumblr, LinkedIn, Microsoft, WordPress and many others, all feature blue as the dominant colour. Blue is said to be the preferred colour of both men and women. Blue is also said to be associated with professionalism and trustworthiness\cite{Blue}. For these reasons, and the fact that the development team just felt that blue looked quite nice with the web application, blue became the dominant theme throughout. 
 
 \section{Design Conclusion}
 \label{sec:SystemDesignConclusion}
 
-The entire architecture of the project has just been outlined using explanations and code snippets. To summarise what was just discussed, the data tier consists of the MongoDB database, and the Firebase database. The Java RESTful service application(logic-tier) then uses Hibernate OGM to query the data in the mongo database and expose the results of those queries to the REST endpoints. The Angular front-end application(presentation-tier) consumes the Java RESTful service, thereby gaining access to full CRUD functionality with the database. 
+The entire architecture of the project has just been outlined using explanations and code snippets. To summarise what was just discussed, the data tier consists of the MongoDB database, and the Firebase database. The Java RESTful service application(logic-tier) then uses Hibernate OGM to query the data in the MongoDB database, and expose the results of those queries to the REST endpoints. The Angular front-end application(presentation-tier) consumes the Java RESTful service, thereby gaining access to full CRUD functionality with the database. 
 
 
 
-Below (fig[\ref{fig:back}])is a diagrammatic overview of what the Java RESTful service(Back end) looks like.
+Below (fig[\ref{fig:back}]) is a diagrammatic overview of what the Java RESTful service(Back end) looks like.
 
 \begin{figure}[H]
     \centering
@@ -1786,7 +1784,7 @@ Below (fig[\ref{fig:back}])is a diagrammatic overview of what the Java RESTful s
 As can be seen, requests come in through the REST end points which pass the data to and from the DAO objects, which in turn use the EntityManager to interact with the Mongo database using Hibernate.
 
 
-Below(fig[\ref{fig:front}]) is a diagrammatic overview of the flow of data at the presentation tier of the application. This diagram only displays an overview of Customer data, but the architecture is the same for Job and Worker data also. 
+Below(fig[\ref{fig:front}]) is a diagrammatic overview of the flow of data at the presentation tier of the application. This diagram only displays an overview of Customer data, but the architecture is the same for Job and Worker data. 
 
 \begin{figure}[H]
     \centering
@@ -1798,7 +1796,7 @@ Below(fig[\ref{fig:front}]) is a diagrammatic overview of the flow of data at th
 
 \bigskip
 
-As can be seen, data comes in and goes out through the CustomerService. This data goes to, and comes from the CustomerResource which can be seen on the previous diagram, in JSON format. This data is then fed to and from any Customer related component typescript files that need it. The component typescript files and the component css files are then used to construct the HTML(view) file, with which the user interacts. Any data that is passed into the HTML files, for example filling out a form, can then be propagated backwards to the CustomerService and sent back to the CustomerResource(fig[\ref{fig:back}]), to be persisted to the database. 
+As can be seen, data comes in and goes out through the CustomerService. This data goes to, and comes from the CustomerResource which can be seen on the previous diagram, in JSON format. This data is then fed to and from any Customer related component typescript files that need it. The component typescript files and the component css files are then used to construct the HTML(view) file, with which the user interacts. Any data that is passed into the HTML files, (for example, filling out a form), can then be propagated backwards to the CustomerService and sent back to the CustomerResource(fig[\ref{fig:back}]), to be persisted to the database. 
 
 \chapter{System Evaluation}
 \label{sec:SystemEvaluation}
@@ -1826,9 +1824,7 @@ In order to begin discussing verification and validation in relation to this pro
 
 \bigskip
 
-With these definitions in mind, let's take a look at verifying this system. 
-
-Verification is often evaluated using automated tests. These tests can assert whether or not the system is built to meet the system requirements. As mentioned in an earlier chapter, Jasmine and Karma were the two technologies used to automate the testing of this project. This testing process is described in a lot more detail in the \hyperref[sec:MethodologyTesting]{\underline{Methodology}} chapter of this document, but these automated tests allowed the development team be assured that the project was complying with the system requirements and that there were no visible errors.
+With these definitions in mind, let's take a look at verifying this system. Verification is often evaluated using automated tests. These tests can assert whether or not the system is built to meet the system requirements. As mentioned in an earlier chapter, Jasmine and Karma were the two technologies used to automate the testing of this project. This testing process is described in a lot more detail in the \hyperref[sec:MethodologyTesting]{\underline{Methodology}} chapter of this document, but these automated tests allowed the development team to be assured that the project was complying with the system requirements and that there were no visible errors.
 
 
 
@@ -1881,7 +1877,7 @@ One of the four options on the navigation bar reads "Post Job". This text is acc
 
 \bigskip
 
-When the user navigates to the "Post Job" view(fig[\ref{fig:postView}]), they are met with a fully validated form guiding them through exactly how to make a job listing. When the customer is finished filling out the form, the "Post" button becomes highlighted, prompting them to hit the button and post the listing.
+When the user navigates to the "Post Job" view(fig[\ref{fig:postView}]), they are met with a fully validated form, guiding them through exactly how to make a job listing. When the customer is finished filling out the form, the "Post" button becomes highlighted, prompting them to hit the button and post the listing.
 
 \begin{figure}[H]
     \centering
@@ -1893,7 +1889,7 @@ When the user navigates to the "Post Job" view(fig[\ref{fig:postView}]), they ar
 
 \bigskip
 
-When the customer then wants to manage their job listings, they need only navigate to the "My Jobs" view on the navigation bar. An example of such a listing can be seen above(fig[\ref{fig:manageJobs}]). The listings are automatically date-stamped with the date they were posted, and offer the customer four possible actions they can perform on the listing. The can click the "View Map" button with the pin icon, this will show them the location of their job listing on Google Maps using the job address they entered into the "Post Job" form. They can edit any or all details of the listings by clicking the "Edit" button, which will bring them to a similar form to the "Post Job" form. They can completely erase this job from the system by clicking the "Remove Job" button with the bin icon on it. This Button is coloured in red to signify that is is potentially a dangerous move and the customer does not want to click it accidentally.
+When the customer then wants to manage their job listings, they need only navigate to the "My Jobs" view on the navigation bar. An example of such a listing can be seen above(fig[\ref{fig:manageJobs}]). The listings are automatically date-stamped with the date they were posted, and offer the customer four possible actions they can perform on the listing. They can click the "View Map" button with the pin icon, this will show them the location of their job listing on Google Maps using the job address they entered into the "Post Job" form. They can edit any or all details of the listings by clicking the "Edit" button, which will bring them to a similar form to the "Post Job" form. They can completely erase this job from the system by clicking the "Remove Job" button with the bin icon on it. This button is coloured in red to signify that is is potentially a dangerous move and the customer does not want to click it accidentally.
 
 \bigskip
 
@@ -1964,7 +1960,7 @@ Below(fig[\ref{fig:bigO}]) is an illustration of some more complexity functions 
 \section{Robustness}
 \label{sec:SystemEvaluationRobustness}
 
-During the duration of this project's development, the development team were constantly thinking about ways that the application could and should deal with errors that occur at run time. There are any number of ways that such an error could occur. The areas that the development team identified as potential weak spots were; any areas of the application where the user inputs data, the URL, and the client itself. These areas mean nothing on their own, therefore they will be explained in more detail here.
+During the duration of this project's development, the development team were constantly thinking about ways that the application could (and should) deal with errors that occur at run time. There are any number of ways that such an error could occur. The areas that the development team identified as potential weak spots were; any areas of the application where the user inputs data, the URL, and the client itself. These areas mean nothing on their own, therefore they will be explained in more detail here.
 
 \bigskip
 
@@ -2059,7 +2055,7 @@ There were a number of issues that the development team came across while develo
 
 \subsubsection{Object Mapping}
 \label{sec:SystemEvaluationObjectMapping}
-The first issue the team faced was a rather trivial one. Originally, certain fields on the mongo data objects were arrays. An example of this would be on the Job object. The Job object was originally supposed to have an array of string requests. However, hibernate had a lot of issues when it came to mapping this object to a java object of the same make-up.  This was the same for any data object that contained arrays. The way around this issue was to, instead of using an array, use a string of space separated values. This string could then be converted to an array upon arrival to the presentation tier from the RESTful service. Due to time constraints, the development team never figured out why there were such issues when it came to mapping relatively simple data objects.
+The first issue the team faced was a rather trivial one. Originally, certain fields on the MongoDB data objects were arrays. An example of this would be on the Job object. The Job object was originally supposed to have an array of string requests. However, hibernate had a lot of issues when it came to mapping this object to a java object of the same make-up.  This was the same for any data object that contained arrays. The way around this issue was to, instead of using an array, use a string of space separated values. This string could then be converted to an array upon arrival to the presentation tier from the RESTful service. Due to time constraints, the development team never figured out why there were such issues when it came to mapping relatively simple data objects.
 
 \subsubsection{CORS}
 \label{sec:SystemEvaluationCORS}
@@ -2075,7 +2071,7 @@ CORS(Cross-Origin-Resource-Sharing), caused a number of problems, at different s
 
 \bigskip
 
-After a lot of research on the topic, a team member stumbled across the following website - \href{https://www.baeldung.com/cors-in-jax-rs}{CORS}. Following the steps outlined in the website, the team member added the following file(fig[\ref{fig:corsFix}]) to the Java project;
+After a lot of research on the topic, a team member stumbled across the following website - '\href{https://www.baeldung.com/cors-in-jax-rs}{https://www.baeldung.com/cors-in-jax-rs}'. Following the steps outlined in the website, the team member added the following file(fig[\ref{fig:corsFix}]) to the Java project;
 
 \begin{figure}[H]
     \centering
@@ -2166,7 +2162,7 @@ Another security limitation would be the vulnerability to a NoSQL injection atta
 
 \chapter{Conclusion}
 \label{sec:Conclusion}
-To conclude, the development team were quite content with the outcome of the project. While it was generally agreed upon that the project fits it's desired purpose and is very intuitive to use, not all of the original objectives have been met. The comparison of the final solution with these objectives, which have been highlighted in the  \hyperref[sec:IntroductionObjectives]{\underline{Introduction Chapter}}, is as follows (respectively):
+To conclude, the development team were quite content with the outcome of the project. While it was generally agreed upon that the project fits it's desired purpose and is very intuitive to use, not all of the original objectives have been met. The comparison of the final solution with these objectives, which have been highlighted in the  \hyperref[sec:IntroductionObjectives]{\underline{Introduction}}, is as follows (respectively):
 
 \begin{enumerate}
     \item A thorough understanding of full stack development has been gained.
@@ -2179,7 +2175,7 @@ To conclude, the development team were quite content with the outcome of the pro
     \item Workers can easily request jobs that are listed on the homepage.
     \item Customers can accept or ignore worker job requests.
     \item Workers can edit their profile with ease.
-    \item Customers can easily edit their job listing.
+    \item Customers can easily edit their job listing/s.
     \item Customers can rate a workers job upon completion. This rating can be updated as long as the job exists on the system. This rating is updated on the worker's profile.
     \item Shopping feature was not added due to unavoidable issue with CORS. (See section \hyperref[sec:SystemEvaluationWebScraping]{\underline{Issues Encountered}} in the System Evaluation chapter.)
     \item Users can view the precise location of a job via Google Maps API.
@@ -2209,11 +2205,11 @@ Github proved a vital tool which was utilised extensively by the development tea
 
 A major objective of this experience for the development team was to investigate the feasibility of the vast number of developers who are a custom to developing applications for relational databases, to migrate their skills to developing applications for NoSQL databases. Due to the imminent lack of standardised query languages, building applications against the native interfaces of NoSQL data stores creates an unfortunate technical lock-in.
 
-To conduct an investigation that might help solve this issue, the team experimented with the Hibernate OGM Persistence Engine. Through this investigation, the development team gained considerable insight. It became agreed upon that once a developer has a basic understanding of of the Java Persistence API, Hibernate OGM is relatively intuitive to configure with NoSQL databases. 
+To conduct an investigation that might help solve this issue, the team experimented with the Hibernate OGM Persistence Engine. Through this investigation, the development team gained considerable insight. It became agreed upon that once a developer has a basic understanding of the Java Persistence API, Hibernate OGM is relatively intuitive to configure with NoSQL databases. 
 
 \bigskip
 
-Prior to this project, the team had a basic knowledge of the individual components of full stack development. This knowledge has been refined as the team got practical exposure of the complexities behind creating a full stack application. The team members had the opportunity to hone their skills in multiple domains of development, such as database management, server configuration, restful services, client side development and system architecture.
+Prior to this project, the team had a basic knowledge of the individual components of full stack development. This knowledge has been refined as the team got practical exposure to the complexities behind creating a full stack application. The team members had the opportunity to hone their skills in multiple domains of development, such as database management, server configuration, restful services, client side development and system architecture.
 
 \bigskip
 
